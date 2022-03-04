@@ -52,9 +52,9 @@ class _MyAppState extends State<MyApp> {
                   },
                 );
 
-                final data = await VGSFlutter.send(
+                final response = await VGSFlutter.send(
                   data: VGSCollectData(
-                    vaultId: 'tntmrqf0yk3',
+                    vaultId: <vault-id>,
                     sandbox: true,
                     headers: {
                       'Authorization':
@@ -96,7 +96,7 @@ class _MyAppState extends State<MyApp> {
                   },
                 );
 
-                log(data.toString(), name: 'Data');
+                log(response.toString(), name: 'Response');
               },
             ),
           );
