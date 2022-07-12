@@ -6,6 +6,10 @@ public class SwiftVgsFlutterPlugin: NSObject, FlutterPlugin {
     public static func register(with registrar: FlutterPluginRegistrar) {
         let channel = FlutterMethodChannel(name: "vgs_flutter", binaryMessenger: registrar.messenger())
         let instance = SwiftVgsFlutterPlugin()
+
+        FlutterShowCardNumberViewPlugin.register(with: registrar)
+        FlutterShowCVVNumberViewPlugin.register(with: registrar)
+
         registrar.addMethodCallDelegate(instance, channel: channel)
     }
     
