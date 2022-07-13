@@ -12,6 +12,7 @@ VGS plugin for Flutter
   s.source_files = 'Classes/**/*'
   s.dependency 'Flutter'
   s.dependency 'VGSCollectSDK', '1.9.6'
+  s.dependency 'VGSShowSDK', '1.1.3'
   s.platform = :ios, '10.0'
 
   # Flutter.framework does not contain a i386 slice.
