@@ -17,9 +17,8 @@ class ShowCardNumberView: UIView {
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.axis = .vertical
         
-        stackView.layoutMargins = UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8)
+        stackView.layoutMargins = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         stackView.distribution = .fill
-        stackView.spacing = 16
         return stackView
     }()
     
@@ -53,7 +52,6 @@ class ShowCardNumberView: UIView {
         
         stackView.addArrangedSubview(cardNumberVGSLabel)
         
-        cardNumberVGSLabel.heightAnchor.constraint(equalToConstant: 60).isActive = true
         cardNumberVGSLabel.widthAnchor.constraint(equalToConstant: 150).isActive = true
     }
     
