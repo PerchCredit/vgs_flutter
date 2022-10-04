@@ -34,7 +34,7 @@ public class SwiftVgsFlutterPlugin: NSObject, FlutterPlugin {
         
         collect.customHeaders = headers
 
-        collect.sendData(extraData: data) { (response) in
+        collect.sendData(path: "", extraData: data) { (response) in
             switch response {
             case .success(_, let data, _):
                 result(data.utf8String)

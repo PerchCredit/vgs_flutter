@@ -62,7 +62,7 @@ class VgsFlutterPlugin : FlutterPlugin, MethodCallHandler, ActivityAware {
 
         collect.clearResponseListeners()
 
-        collect.asyncSubmit(HTTPMethod.POST)
+        collect.asyncSubmit("", HTTPMethod.POST)
 
         collect.addOnResponseListeners(
                 object : VgsCollectResponseListener {
