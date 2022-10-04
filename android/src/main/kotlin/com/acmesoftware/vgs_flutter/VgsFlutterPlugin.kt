@@ -62,8 +62,6 @@ class VgsFlutterPlugin : FlutterPlugin, MethodCallHandler, ActivityAware {
 
         collect.clearResponseListeners()
 
-        collect.asyncSubmit("/post", HTTPMethod.POST)
-
         collect.addOnResponseListeners(
                 object : VgsCollectResponseListener {
                     override fun onResponse(response: VGSResponse?) {
